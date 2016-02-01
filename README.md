@@ -1,8 +1,5 @@
 # leads-sdk
 
-![Version](https://img.shields.io/cocoapods/v/leads-sdk.svg?style=flat)](http://cocoapods.org/pods/leads-sdk)
-[![License](https://img.shields.io/cocoapods/l/leads-sdk.svg?style=flat)](http://cocoapods.org/pods/leads-sdk)
-[![Platform](https://img.shields.io/cocoapods/p/leads-sdk.svg?style=flat)](http://cocoapods.org/pods/leads-sdk)
 
 The [Salesforce Sales Cloud](http://salesforce.com/sales-cloud) provides a convenient [web-to-lead](https://help.salesforce.com/apex/HTViewHelpDoc?id=setting_up_web_to_lead.htm&language=en_US) functionality which allows HTTP POST submissions of new leads for standard lead fields (fist name, last name, email, company, city, and state). The Leads SDK provides an embeddable button for iOS apps to make lead capture from native apps incredibly easy.
 
@@ -98,9 +95,9 @@ Once you have your fields Dictionary create, add the dictionary to the LeadsButt
 ###Adding Themes
 Three UI themes have been included in LeadsButton:
 
-* ![Default](https://github.com/quintonwall/leads-sdk/blob/master/readme-assets/default.png?raw=true)
-* ![Dark](https://github.com/quintonwall/leads-sdk/blob/master/readme-assets/dark.png?raw=true)
-* ![Graphical](https://github.com/quintonwall/leads-sdk/blob/master/readme-assets/graphical.png?raw=true)
+Default: ![Default](https://github.com/quintonwall/leads-sdk/blob/master/readme-assets/default.png?raw=true)
+Dark: ![Dark](https://github.com/quintonwall/leads-sdk/blob/master/readme-assets/dark.png?raw=true)
+Graphical ![Graphical](https://github.com/quintonwall/leads-sdk/blob/master/readme-assets/graphical.png?raw=true)
 
 You can add a theme with the following command. If you do not specify any theme, you can set colors and styles manually.
 
