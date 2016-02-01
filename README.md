@@ -1,9 +1,10 @@
 # leads-sdk
 
-[![CI Status](http://img.shields.io/travis/Quinton Wall/leads-sdk.svg?style=flat)](https://travis-ci.org/Quinton Wall/leads-sdk)
-[![Version](https://img.shields.io/cocoapods/v/leads-sdk.svg?style=flat)](http://cocoapods.org/pods/leads-sdk)
+![Version](https://img.shields.io/cocoapods/v/leads-sdk.svg?style=flat)](http://cocoapods.org/pods/leads-sdk)
 [![License](https://img.shields.io/cocoapods/l/leads-sdk.svg?style=flat)](http://cocoapods.org/pods/leads-sdk)
 [![Platform](https://img.shields.io/cocoapods/p/leads-sdk.svg?style=flat)](http://cocoapods.org/pods/leads-sdk)
+
+The [Salesforce Sales Cloud](http://salesforce.com/sales-cloud) provides a convenient [web-to-lead](https://help.salesforce.com/apex/HTViewHelpDoc?id=setting_up_web_to_lead.htm&language=en_US) functionality which allows HTTP POST submissions of new leads for standard lead fields (fist name, last name, email, company, city, and state). The Leads SDK provides an embeddable button for iOS apps to make lead capture from native apps incredibly easy.
 
 ## Usage
 
@@ -30,10 +31,8 @@ use_frameworks!
 pod 'leads-sdk' :git => 'https://github.com/quintonwall/leads-sdk.git'
 ```
 
-## Working with Leads
-The [Salesforce Sales Cloud](http://salesforce.com/sales-cloud) provides a convenient [web-to-lead](https://help.salesforce.com/apex/HTViewHelpDoc?id=setting_up_web_to_lead.htm&language=en_US) functionality which allows HTTP POST submissions of new leads for standard lead fields (fist name, last name, email, company, city, and state). The Leads SDK provides an embeddable button for iOS apps to make lead capture from native apps incredibly easy.
 
-###Add the LeadsButton
+###Add the LeadsButton to a UIView
 Within your storyboard, drag a standard button from the palette, then change its type to lead button
 
 ![](https://github.com/quintonwall/leads-sdk/blob/master/readme-assets/customClass.png?raw=true)
