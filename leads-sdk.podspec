@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = "leads-sdk"
   s.version          = "0.1.0"
-  s.summary          = "Embeddable buttons for adding leads into Salesforce Sales Cloud"
+  s.summary          = "Collect leads in Salesforce Sales Cloud from any native iOS apps."
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -17,7 +17,7 @@ Pod::Spec.new do |s|
 #   * Write the description between the DESC delimiters below.
 #   * Finally, don't worry about the indent, CocoaPods strips it!  
   s.description      = <<-DESC
-			Collect leads in Salesforce from any native iOS app
+			An easy to use embeddable button to let you collect leads in Salesforce from any native iOS app.
                        DESC
 
   s.homepage         = "https://github.com/quintonwall/leads-sdk"
@@ -32,7 +32,7 @@ Pod::Spec.new do |s|
 
   s.source_files = 'Pod/Classes/**/*'
   s.resource_bundles = {
-    'leads-sdk' => ['Pod/Assets/*.png']
+    'leads-sdk' => ['Pod/Assets/*.png', 'leads-sdk/Pod/Classes/leadsBackground.png']
   }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
