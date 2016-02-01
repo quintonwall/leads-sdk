@@ -99,8 +99,8 @@ Once you have your fields Dictionary create, add the dictionary to the LeadsButt
 Three UI themes have been included in LeadsButton:
 
 * ![Default](https://github.com/quintonwall/leads-sdk/blob/master/readme-assets/default.png?raw=true)
-* [Dark](https://github.com/quintonwall/leads-sdk/blob/master/readme-assets/dark.png?raw=true)
-* [Graphical](https://github.com/quintonwall/leads-sdk/blob/master/readme-assets/graphical.png?raw=true)
+* ![Dark](https://github.com/quintonwall/leads-sdk/blob/master/readme-assets/dark.png?raw=true)
+* ![Graphical](https://github.com/quintonwall/leads-sdk/blob/master/readme-assets/graphical.png?raw=true)
 
 You can add a theme with the following command. If you do not specify any theme, you can set colors and styles manually.
 
