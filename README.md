@@ -72,7 +72,7 @@ LeadsButton is preconfigured to support the typical standard lead fields (fist n
 Salesforce Leads also support custom fields. Your administrator will need to use the [web-to-lead](https://help.salesforce.com/apex/HTViewHelpDoc?id=setting_up_web_to_lead.htm&language=en_US) feature within Salesforce to generate the unique custom field Ids. If you are only collecting standard lead fields, there is no need to generate a web-to-lead form. Once you have these field ids, simply add them to the dictionary object.
 
 ```swift
-  \\populate custom fields
+  //populate custom fields
   d["00NG000000CZxsC"] = "MyCustomValue"
 ```
 
