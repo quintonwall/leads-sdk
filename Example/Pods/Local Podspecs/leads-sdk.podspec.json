@@ -1,0 +1,25 @@
+{
+  "name": "leads-sdk",
+  "version": "0.1.0",
+  "summary": "A short description of leads-sdk.",
+  "description": "",
+  "homepage": "https://github.com/<GITHUB_USERNAME>/leads-sdk",
+  "license": "MIT",
+  "authors": {
+    "Quinton Wall": "qwall@salesforce.com"
+  },
+  "source": {
+    "git": "https://github.com/<GITHUB_USERNAME>/leads-sdk.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "requires_arc": true,
+  "source_files": "Pod/Classes/**/*",
+  "resource_bundles": {
+    "leads-sdk": [
+      "Pod/Assets/*.png"
+    ]
+  }
+}

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1605" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="leads_sdk_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ATk-5P-Cm2" customClass="LeadsButton" customModule="leads_sdk">
+                                <rect key="frame" x="200" y="285" width="200" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="9gA-DI-NUe"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="hCB-VC-ban"/>
+                                    <constraint firstAttribute="height" constant="30" id="xir-ir-XJz"/>
+                                </constraints>
+                                <state key="normal" title="Add Lead"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="orgid" value="00DG0000000knNB"/>
+                                </userDefinedRuntimeAttributes>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="9gA-DI-NUe"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="leadTapped:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="dWS-2m-Jmj"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ATk-5P-Cm2" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" id="2HZ-EH-eTS"/>
+                            <constraint firstItem="ATk-5P-Cm2" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="dft-jF-osn"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="myLeadButton" destination="ATk-5P-Cm2" id="Wqz-dF-8yG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="305" y="429"/>
+        </scene>
+    </scenes>
+</document>
