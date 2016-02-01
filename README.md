@@ -36,7 +36,7 @@ Within your storyboard, drag a standard button from the palette, then change its
 
 ![](https://github.com/quintonwall/leads-sdk/blob/master/readme-assets/customClass.png?raw=true)
 
-Then, in the properties editor, add the [Salesforce org id](https://help.salesforce.com/HTViewSolution?id=000006019) provided by your Salesforce administrator
+Then, in the properties editor, add the [Salesforce org id](https://help.salesforce.com/HTViewSolution?id=000006019) provided by your Salesforce administrator. The return url is not really used in mobile apps. You can leave it set to the default. The pod currently does not use it, but future releases may support a webview sort of confirmation.
 
 ![](https://github.com/quintonwall/leads-sdk/blob/master/readme-assets/setOrgId.png?raw=true)
 
