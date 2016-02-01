@@ -17,6 +17,7 @@ Pod::Spec.new do |s|
 #   * Write the description between the DESC delimiters below.
 #   * Finally, don't worry about the indent, CocoaPods strips it!  
   s.description      = <<-DESC
+			Collect leads in Salesforce from any native iOS app
                        DESC
 
   s.homepage         = "https://github.com/quintonwall/leads-sdk"
@@ -31,7 +32,7 @@ Pod::Spec.new do |s|
 
   s.source_files = 'Pod/Classes/**/*'
   s.resource_bundles = {
-    'leads-sdk' => ['Pod/Classes/*.png']
+    'leads-sdk' => ['Pod/Assets/*.png']
   }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'

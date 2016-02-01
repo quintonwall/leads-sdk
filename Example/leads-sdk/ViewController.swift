@@ -18,7 +18,7 @@ class ViewController: UIViewController {
         
         //add a theme: default, dark, or graphical
         //or simply exclude to set your own styling
-        LeadsThemeManager.applyTheme(LeadsTheme.Graphical, leadsbutton: myLeadButton)
+        LeadsThemeManager.applyTheme(LeadsTheme.Default, leadsbutton: myLeadButton)
     }
 
     
