@@ -1,7 +1,7 @@
 # leads-sdk
--![Version](https://img.shields.io/cocoapods/v/leads-sdk.svg?style=flat)(http://cocoapods.org/pods/leads-sdk)
--![License](https://img.shields.io/cocoapods/l/leads-sdk.svg?style=flat)(http://cocoapods.org/pods/leads-sdk)
--![Platform](https://img.shields.io/cocoapods/p/leads-sdk.svg?style=flat)(http://cocoapods.org/pods/leads-sdk)
+![Version](https://img.shields.io/cocoapods/v/leads-sdk.svg?style=flat)
+![License](https://img.shields.io/cocoapods/l/leads-sdk.svg?style=flat)
+![Platform](https://img.shields.io/cocoapods/p/leads-sdk.svg?style=flat)
 
 The Leads SDK provides an embeddable button for iOS apps to make lead capture from native apps incredibly easy. Leads are stored in the [Salesforce Sales Cloud](http://salesforce.com/sales-cloud) for sales teams to quickly action and drive further sales from any mobile application.
 
