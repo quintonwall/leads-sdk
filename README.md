@@ -1,5 +1,7 @@
 # leads-sdk
-
+-![Version](https://img.shields.io/cocoapods/v/leads-sdk.svg?style=flat)](http://cocoapods.org/pods/leads-sdk)
+ -[![License](https://img.shields.io/cocoapods/l/leads-sdk.svg?style=flat)](http://cocoapods.org/pods/leads-sdk)
+ -[![Platform](https://img.shields.io/cocoapods/p/leads-sdk.svg?style=flat)](http://cocoapods.org/pods/leads-sdk)
 
 The Leads SDK provides an embeddable button for iOS apps to make lead capture from native apps incredibly easy. Leads are stored in the [Salesforce Sales Cloud](http://salesforce.com/sales-cloud) for sales teams to quickly action and drive further sales from any mobile application.
 
@@ -53,7 +55,7 @@ class ViewController: UIViewController {
 
 ####Add Standard Fields
 LeadsButton is preconfigured to support the typical standard lead fields (fist name, last name, email, company, city, and state). When using standard fields, Salesforce administrators do no need to create a custom  [web-to-lead](https://help.salesforce.com/apex/HTViewHelpDoc?id=setting_up_web_to_lead.htm&language=en_US) field. As long as web-to-lead is enabled in the Salesforce org, that is all you need.
- 
+
 ```swift
   var d :Dictionary = [String: String]()
 
