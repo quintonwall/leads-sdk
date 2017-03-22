@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "leads-sdk"
-  s.version          = "0.1.0"
+  s.version          = "0.2.0"
   s.summary          = "Collect leads in Salesforce Sales Cloud from any native iOS apps."
 
 # This description is used to generate tags and improve search results.
@@ -23,12 +23,12 @@ Pod::Spec.new do |s|
   s.homepage         = "https://github.com/quintonwall/leads-sdk"
   # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
   s.license          = 'MIT'
-  s.author           = { "Quinton Wall" => "qwall@salesforce.com" }
+  s.author           = { "Quinton Wall" => "@quintonwall" }
   s.source           = { :git => "https://github.com/quintonwall/leads-sdk.git", :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/quintonwall>'
+  s.social_media_url = 'https://twitter.com/quintonwall'
 
-  s.platform     = :ios, '8.0'
-  s.requires_arc = true
+  s.platform     = :ios, '10.0'
+  s.requires_arc = false
 
   s.source_files = 'Pod/Classes/**/*'
   s.resource_bundles = {

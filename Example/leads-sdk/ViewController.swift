@@ -18,19 +18,19 @@ class ViewController: UIViewController {
         
         //add a theme: default, dark, or graphical
         //or simply exclude to set your own styling
-        LeadsThemeManager.applyTheme(LeadsTheme.Default, leadsbutton: myLeadButton)
+        LeadsThemeManager.applyTheme(LeadsTheme.default, leadsbutton: myLeadButton)
     }
 
     
    
-    @IBAction func leadTapped(sender: AnyObject) {
+    @IBAction func leadTapped(_ sender: AnyObject) {
         
         var d :Dictionary = [String: String]()
         
        //populate the standard fields
         d[Leads.StandardFields.FIRST_NAME] = "Quinton"
         d[Leads.StandardFields.LAST_NAME] = "Wall"
-        d[Leads.StandardFields.EMAIL] = "freddy@flint.com"
+        d[Leads.StandardFields.EMAIL] = "freddy@leadsdk.com"
         d[Leads.StandardFields.COMPANY] = "Salesforce"
         d[Leads.StandardFields.CITY] = "San Francisco"
         d[Leads.StandardFields.STATE] = "CA"
@@ -50,10 +50,10 @@ class ViewController: UIViewController {
         do {
            try myLeadButton.sendLead()
         }
-        catch Leads.LeadError.NoOrgId {
+        catch Leads.LeadError.noOrgId {
             print("no ord id set!")
         }
-        catch Leads.LeadError.CommsFailure {
+        catch Leads.LeadError.commsFailure {
             //comms problem
         }
         catch {

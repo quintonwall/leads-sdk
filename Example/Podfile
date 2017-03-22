@@ -1,13 +1,7 @@
 source 'https://github.com/CocoaPods/Specs.git'
 use_frameworks!
 
-target 'leads-sdk_Example', :exclusive => true do
+target 'leads-sdk_Example' do
   pod 'leads-sdk', :path => '../'
 end
 
-target 'leads-sdk_Tests', :exclusive => true do
-  pod 'leads-sdk', :path => '../'
-
-  pod 'Quick', '~> 0.8.0'
-  pod 'Nimble', '3.0.0'
-end
