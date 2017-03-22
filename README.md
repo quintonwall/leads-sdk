@@ -31,7 +31,7 @@ pod 'leads-sdk' :git => 'https://github.com/quintonwall/leads-sdk.git'
 ```
 
 
-###Add the LeadsButton to a UIView
+### Add the LeadsButton to a UIView
 Within your storyboard, drag a standard button from the palette, then change its type to lead button
 
 ![](https://github.com/quintonwall/leads-sdk/blob/master/readme-assets/customClass.png?raw=true)
@@ -40,7 +40,7 @@ Then, in the properties editor, add the [Salesforce org id](https://help.salesfo
 
 ![](https://github.com/quintonwall/leads-sdk/blob/master/readme-assets/setOrgId.png?raw=true)
 
-###Pass lead information to LeadsButton
+### Pass lead information to LeadsButton
 To add fields to the LeadsButton, create an outlet to your ViewController, and import the leads_sdk module.
 
 ```swift
@@ -53,7 +53,7 @@ class ViewController: UIViewController {
 ```
 
 
-####Add Standard Fields
+#### Add Standard Fields
 LeadsButton is preconfigured to support the typical standard lead fields (fist name, last name, email, company, city, and state). When using standard fields, Salesforce administrators do no need to create a custom  [web-to-lead](https://help.salesforce.com/apex/HTViewHelpDoc?id=setting_up_web_to_lead.htm&language=en_US) field. As long as web-to-lead is enabled in the Salesforce org, that is all you need.
 
 ```swift
@@ -68,7 +68,7 @@ LeadsButton is preconfigured to support the typical standard lead fields (fist n
   d[Leads.StandardFields.STATE] = "CA"
 ```
 
-####Add Custom Fields
+#### Add Custom Fields
 Salesforce Leads also support custom fields. Your administrator will need to use the [web-to-lead](https://help.salesforce.com/apex/HTViewHelpDoc?id=setting_up_web_to_lead.htm&language=en_US) feature within Salesforce to generate the unique custom field Ids. If you are only collecting standard lead fields, there is no need to generate a web-to-lead form. Once you have these field ids, simply add them to the dictionary object.
 
 ```swift
@@ -76,7 +76,7 @@ Salesforce Leads also support custom fields. Your administrator will need to use
   d["00NG000000CZxsC"] = "MyCustomValue"
 ```
 
-####Send the Leads to Salesforce
+#### Send the Leads to Salesforce
 Once you have your fields Dictionary create, add the dictionary to the LeadsButton and call sendLead(). SendLead also checks to ensure that you have specified an Org Id throwing an error if it is not set correctly.
 
 ```swift
@@ -96,7 +96,7 @@ Once you have your fields Dictionary create, add the dictionary to the LeadsButt
 
 ```
 
-###Adding Themes
+### Adding Themes
 Three UI themes have been included in LeadsButton:
 
 1. Default: ![Default](https://github.com/quintonwall/leads-sdk/blob/master/readme-assets/default.png?raw=true)
@@ -109,7 +109,7 @@ You can add a theme with the following command. If you do not specify any theme,
   LeadsThemeManager.applyTheme(LeadsTheme.[Default | Dark | Graphical], leadsbutton: myLeadButton)
 ```
 
-##Sample Application
+## Sample Application
 For a complete example of using the LeadsButton, please check out the sample app included in this project.
 
 ## Author
