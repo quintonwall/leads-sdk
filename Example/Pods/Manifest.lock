@@ -1,20 +1,16 @@
 PODS:
-  - leads-sdk (0.1.0)
-  - Nimble (3.0.0)
-  - Quick (0.8.0)
+  - leads-sdk (0.2.0)
 
 DEPENDENCIES:
   - leads-sdk (from `../`)
-  - Nimble (= 3.0.0)
-  - Quick (~> 0.8.0)
 
 EXTERNAL SOURCES:
   leads-sdk:
     :path: ../
 
 SPEC CHECKSUMS:
-  leads-sdk: 7710dac8717fd4cb149d3695436eddfe9b463372
-  Nimble: 4c353d43735b38b545cbb4cb91504588eb5de926
-  Quick: 563d0f6ec5f72e394645adb377708639b7dd38ab
+  leads-sdk: f7093e894e978a58b183235e1dd7523baa78ab9f
 
-COCOAPODS: 0.39.0
+PODFILE CHECKSUM: 5516b450c2d0793136da11ae3fd220af07772935
+
+COCOAPODS: 1.1.1

@@ -1,6 +1,0 @@
-framework module Pods_leads_sdk_Tests {
-  umbrella header "Pods-leads-sdk_Tests-umbrella.h"
-
-  export *
-  module * { export * }
-}

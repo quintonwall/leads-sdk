@@ -8,7 +8,7 @@
 
 import Foundation
 
-public class Leads {
+open class Leads {
 
     public struct StandardFields {
         public static let ORGID = "oid"
@@ -20,9 +20,9 @@ public class Leads {
         public static let STATE = "state"
     }
     
-    public enum LeadError: ErrorType {
-        case NoOrgId
-        case CommsFailure
+    public enum LeadError: Error {
+        case noOrgId
+        case commsFailure
     }
 
 }

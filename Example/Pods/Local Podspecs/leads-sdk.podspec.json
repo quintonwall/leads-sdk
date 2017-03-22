@@ -1,25 +1,27 @@
 {
   "name": "leads-sdk",
-  "version": "0.1.0",
-  "summary": "A short description of leads-sdk.",
-  "description": "",
-  "homepage": "https://github.com/<GITHUB_USERNAME>/leads-sdk",
+  "version": "0.2.0",
+  "summary": "Collect leads in Salesforce Sales Cloud from any native iOS apps.",
+  "description": "An easy to use embeddable button to let you collect leads in Salesforce from any native iOS app.",
+  "homepage": "https://github.com/quintonwall/leads-sdk",
   "license": "MIT",
   "authors": {
-    "Quinton Wall": "qwall@salesforce.com"
+    "Quinton Wall": "@quintonwall"
   },
   "source": {
-    "git": "https://github.com/<GITHUB_USERNAME>/leads-sdk.git",
-    "tag": "0.1.0"
+    "git": "https://github.com/quintonwall/leads-sdk.git",
+    "tag": "0.2.0"
   },
+  "social_media_url": "https://twitter.com/quintonwall",
   "platforms": {
-    "ios": "8.0"
+    "ios": "10.0"
   },
-  "requires_arc": true,
+  "requires_arc": false,
   "source_files": "Pod/Classes/**/*",
   "resource_bundles": {
     "leads-sdk": [
-      "Pod/Assets/*.png"
+      "Pod/Assets/*.png",
+      "leads-sdk/Pod/Classes/leadsBackground.png"
     ]
   }
 }

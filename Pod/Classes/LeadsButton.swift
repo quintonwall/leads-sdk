@@ -26,10 +26,10 @@
 
 import UIKit
 
-public class LeadsButton: UIButton {
-    @IBInspectable public var orgid: String = ""
-    private var postURL: String = "https://www.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8"
-    @IBInspectable public var retURL: String = "http://mobile/success"
+open class LeadsButton: UIButton {
+    @IBInspectable open var orgid: String = ""
+    fileprivate var postURL: String = "https://www.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8"
+    @IBInspectable open var retURL: String = "http://mobile/success"
     
        //convenience variables for minimum info
     //@IBInspectable public var firstName: String = ""
@@ -39,22 +39,23 @@ public class LeadsButton: UIButton {
     
     
     //default lead fields. You can add your own custom fields by adding an element to the dictionary at run time.
-    public var formFields: [String : String] = [Leads.StandardFields.FIRST_NAME : "",
+    open var formFields: [String : String] = [Leads.StandardFields.FIRST_NAME : "",
        Leads.StandardFields.LAST_NAME : "", Leads.StandardFields.EMAIL : "", Leads.StandardFields.COMPANY : "", Leads.StandardFields.CITY : "", Leads.StandardFields.STATE : ""]
     
     
 
     
     //on tap, send to salesforce
-    public func sendLead() throws {
+    open func sendLead() throws {
        
-        let request = NSMutableURLRequest(URL: NSURL(string: postURL)!)
-        let session = NSURLSession.sharedSession()
-        request.HTTPMethod = "POST"
+        let request = NSMutableURLRequest(url: URL(string: postURL)!)
+
+        let session = URLSession.shared
+        request.httpMethod = "POST"
         request.addValue("application/x-www-form-urlencoded", forHTTPHeaderField: "Content-Type")
         
         if (orgid.isEmpty ) {
-            throw Leads.LeadError.NoOrgId
+            throw Leads.LeadError.noOrgId
         }
         else {
             formFields[Leads.StandardFields.ORGID] = orgid
@@ -63,13 +64,12 @@ public class LeadsButton: UIButton {
         var bodyData: String = ""
         
         for (key,val) in formFields {
-            bodyData.appendContentsOf("&\(key)=\(val)")
+            bodyData.append("&\(key)=\(val)")
             
         }
-        request.HTTPBody = bodyData.dataUsingEncoding(NSUTF8StringEncoding);
+        request.httpBody = bodyData.data(using: String.Encoding.utf8);
         
-        
-        let task = session.dataTaskWithRequest(request, completionHandler:{
+        let task = session.dataTask(with: request as URLRequest, completionHandler:{
             data, response, err -> Void in
             // this code runs asynchronously...
             // ... i.e. later, after the request has completed (or failed)
